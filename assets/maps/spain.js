@@ -31,9 +31,6 @@
             text: null
         },
 
-        // subtitle: {
-        //     text: 'Source map: <a href="https://code.highcharts.com/mapdata/countries/es/es-all.topo.json">Spain</a>',
-        // },
 
         mapNavigation: {
             enabled: false,
@@ -49,15 +46,15 @@
             color: '#FFC7C2',
             states: {
                 hover: {
-                    color: '#BADA55'
+                    color: '#ea4748'
                 }
             },
             dataLabels: {
                 enabled: false,
                 format: '{point.name}'
             },
-            borderColor: '#ffffff60', // Change to your desired gray color
-            borderWidth: 2,
+            borderColor: '#ffffff60',
+            borderWidth: 1.5,
         }],
         exporting: {
             enabled: false

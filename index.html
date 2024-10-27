@@ -5,19 +5,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+    <div class="mobileNav">
+        <div class="mobNavHeading">
+            <h4>Menu</h4>
+            <img src="assets/images/close.png" alt="">
+        </div>
+        <ul>
+            <li class="active">
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Directory <img src="assets/images/arrow-down.svg" alt=""></a>
+                <ul>
+                    <li>
+                        <a href="#">Ayuntamientos</a>
+                    </li>
+                    <li>
+                        <a href="#">Provincias</a>
+                    </li>
+                    <li>
+                        <a href="#">Comarcas</a>
+                    </li>
+                    <li>
+                        <a href="#">Comunidades</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Reports</a>
+            </li>
+            <li>
+                <a href="#">Present <img src="assets/images/arrow-down.svg" alt=""></a>
+                <ul>
+                    <li>
+                        <a href="#">Noticias</a>
+                    </li>
+                    <li>
+                        <a href="#">Artículos</a>
+                    </li>
+                    <li>
+                        <a href="#">Comarcas</a>
+                    </li>
+                    <li>
+                        <a href="#">Noticias sobre la España Vaciada</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Sections <img src="assets/images/arrow-down.svg" alt=""></a>
+                <ul>
+                    <li>
+                        <a href="#">Agenda de eventos</a>
+                    </li>
+                    <li>
+                        <a href="#">Planear una ruta de viaje</a>
+                    </li>
+                    <li>
+                        <a href="#">Foros</a>
+                    </li>
+                    <li>
+                        <a href="#">La España Vaciada</a>
+                    </li>
+                    <li>
+                        <a href="#">Municipios premiados</a>
+                    </li>
+                    <li>
+                        <a href="#">Pueblos asombrosos</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">My Account</a>
+            </li>
+        </ul>
+    </div>
     <div class="topBg">
         <header>
             <div class="container">
+                <button class="menuOpen">
+                    <img src="assets/images/menu-icon.svg" alt="">
+                </button>
                 <ul>
                     <li class="active">
                         <a href="#">Home</a>
                     </li>
                     <li>
                         <a href="#">Directory <img src="assets/images/arrow-down.svg" alt=""></a>
+                        <ul>
+                            <li>
+                                <a href="#">Ayuntamientos</a>
+                            </li>
+                            <li>
+                                <a href="#">Provincias</a>
+                            </li>
+                            <li>
+                                <a href="#">Comarcas</a>
+                            </li>
+                            <li>
+                                <a href="#">Comunidades</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">Reports</a>
@@ -25,19 +117,57 @@
                 </ul>
                 <div class="headerLogo">
                     <img src="assets/images/logo-background-shape.svg" alt="" class="logoBackground">
-                    <img src="assets/images/logo.svg" alt="" class="logo">
+                    <img src="assets/images/logo-background-shape-2.svg" alt="" class="logoBackground logoBackground2">
+                    <img src="assets/images/logotipo-ayuntamiento-es.png" alt="" class="logo">
                 </div>
                 <ul>
                     <li>
                         <a href="#">Present <img src="assets/images/arrow-down.svg" alt=""></a>
+                        <ul>
+                            <li>
+                                <a href="#">Noticias</a>
+                            </li>
+                            <li>
+                                <a href="#">Artículos</a>
+                            </li>
+                            <li>
+                                <a href="#">Comarcas</a>
+                            </li>
+                            <li>
+                                <a href="#">Noticias sobre la España Vaciada</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">Sections <img src="assets/images/arrow-down.svg" alt=""></a>
+                        <ul>
+                            <li>
+                                <a href="#">Agenda de eventos</a>
+                            </li>
+                            <li>
+                                <a href="#">Planear una ruta de viaje</a>
+                            </li>
+                            <li>
+                                <a href="#">Foros</a>
+                            </li>
+                            <li>
+                                <a href="#">La España Vaciada</a>
+                            </li>
+                            <li>
+                                <a href="#">Municipios premiados</a>
+                            </li>
+                            <li>
+                                <a href="#">Pueblos asombrosos</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">My Account</a>
                     </li>
                 </ul>
+                <button class="profileOpen">
+                    <img src="assets/images/profile-icon.svg" alt="">
+                </button>
             </div>
         </header>
 
@@ -108,102 +238,154 @@
                 </div>
             </div>
             <div class="findInfoWrap">
-                <div class="singleFindInfoCon">
-                    <div class="singleFindInfo">
-                        <div class="singleFindLeft">
-                            <img src="assets/images/find-img-1.png" alt="">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="singleFindInfoCon">
+                                <div class="singleFindInfo">
+                                    <div class="singleFindLeft">
+                                        <img src="assets/images/find-img-1.png" alt="">
+                                    </div>
+                                    <div class="singleFindRight">
+                                        <div class="singleFindRightHeading">
+                                            <h3>Valencis</h3>
+                                            <a href="#">
+                                                <img src="assets/images/arrow-down.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <p>
+                                            The Valencia City Council and the city are the capital of the Valencian
+                                        </p>
+                                        <a href="#">
+                                            <img src="assets/images/arrow-down.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="singleFindRight">
-                            <h3>Valencis</h3>
-                            <p>
-                                The Valencia City Council and the city are the capital of the Valencian
-                            </p>
-                            <a href="#">
-                                <img src="assets/images/arrow-down.svg" alt="">
-                            </a>
+                        <div class="swiper-slide">
+                            <div class="singleFindInfoCon">
+                                <div class="singleFindInfo">
+                                    <div class="singleFindLeft">
+                                        <img src="assets/images/find-img-2.png" alt="">
+                                    </div>
+                                    <div class="singleFindRight">
+                                        <div class="singleFindRightHeading">
+                                            <h3>Barcelona</h3>
+                                            <a href="#">
+                                                <img src="assets/images/arrow-down.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <p>
+                                            Barcelona, ​​bathed by the Mediterranean, a cosmopolitan
+                                        </p>
+                                        <a href="#">
+                                            <img src="assets/images/arrow-down.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="singleFindInfoCon">
+                                <div class="singleFindInfo">
+                                    <div class="singleFindLeft">
+                                        <img src="assets/images/find-img-3.png" alt="">
+                                    </div>
+                                    <div class="singleFindRight">
+                                        <div class="singleFindRightHeading">
+                                            <h3>Madrid</h3>
+                                            <a href="#">
+                                                <img src="assets/images/arrow-down.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <p>
+                                            Madrid, capital of Spain, dynamic and international city, open to all
+                                            cultures
+                                        </p>
+                                        <a href="#">
+                                            <img src="assets/images/arrow-down.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="singleFindInfoCon">
+                                <div class="singleFindInfo">
+                                    <div class="singleFindLeft">
+                                        <img src="assets/images/find-img-4.png" alt="">
+                                    </div>
+                                    <div class="singleFindRight">
+                                        <div class="singleFindRightHeading">
+                                            <h3>Saragossa</h3>
+                                            <a href="#">
+                                                <img src="assets/images/arrow-down.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <p>
+                                            Zaragoza, capital of the Autonomous Community of Aragon
+                                        </p>
+                                        <a href="#">
+                                            <img src="assets/images/arrow-down.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="singleFindInfoCon">
+                                <div class="singleFindInfo">
+                                    <div class="singleFindLeft">
+                                        <img src="assets/images/find-img-5.png" alt="">
+                                    </div>
+                                    <div class="singleFindRight">
+                                        <div class="singleFindRightHeading">
+                                            <h3>Malaga</h3>
+                                            <a href="#">
+                                                <img src="assets/images/arrow-down.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <p>
+                                            The town hall of Malaga and the city, located in the south of Andalusia
+                                        </p>
+                                        <a href="#">
+                                            <img src="assets/images/arrow-down.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="singleFindInfoCon">
+                                <div class="singleFindInfo">
+                                    <div class="singleFindLeft">
+                                        <img src="assets/images/find-img-6.png" alt="">
+                                    </div>
+                                    <div class="singleFindRight">
+                                        <div class="singleFindRightHeading">
+                                            <h3>Basin</h3>
+                                            <a href="#">
+                                                <img src="assets/images/arrow-down.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <p>
+                                            The city and the City Council of Cuenca are located in the Autonomous
+                                            Community
+                                        </p>
+                                        <a href="#">
+                                            <img src="assets/images/arrow-down.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="singleFindInfoCon">
-                    <div class="singleFindInfo">
-                        <div class="singleFindLeft">
-                            <img src="assets/images/find-img-2.png" alt="">
-                        </div>
-                        <div class="singleFindRight">
-                            <h3>Barcelona</h3>
-                            <p>
-                                Barcelona, ​​bathed by the Mediterranean, a cosmopolitan
-                            </p>
-                            <a href="#">
-                                <img src="assets/images/arrow-down.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="singleFindInfoCon">
-                    <div class="singleFindInfo">
-                        <div class="singleFindLeft">
-                            <img src="assets/images/find-img-3.png" alt="">
-                        </div>
-                        <div class="singleFindRight">
-                            <h3>Madrid</h3>
-                            <p>
-                                Madrid, capital of Spain, dynamic and international city, open to all cultures
-                            </p>
-                            <a href="#">
-                                <img src="assets/images/arrow-down.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="singleFindInfoCon">
-                    <div class="singleFindInfo">
-                        <div class="singleFindLeft">
-                            <img src="assets/images/find-img-4.png" alt="">
-                        </div>
-                        <div class="singleFindRight">
-                            <h3>Saragossa</h3>
-                            <p>
-                                Zaragoza, capital of the Autonomous Community of Aragon
-                            </p>
-                            <a href="#">
-                                <img src="assets/images/arrow-down.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="singleFindInfoCon">
-                    <div class="singleFindInfo">
-                        <div class="singleFindLeft">
-                            <img src="assets/images/find-img-5.png" alt="">
-                        </div>
-                        <div class="singleFindRight">
-                            <h3>Malaga</h3>
-                            <p>
-                                The town hall of Malaga and the city, located in the south of Andalusia
-                            </p>
-                            <a href="#">
-                                <img src="assets/images/arrow-down.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="singleFindInfoCon">
-                    <div class="singleFindInfo">
-                        <div class="singleFindLeft">
-                            <img src="assets/images/find-img-6.png" alt="">
-                        </div>
-                        <div class="singleFindRight">
-                            <h3>Basin</h3>
-                            <p>
-                                The city and the City Council of Cuenca are located in the Autonomous Community
-                            </p>
-                            <a href="#">
-                                <img src="assets/images/arrow-down.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <div class="findInfoHeadBtn findInfoHeadBtnEnd">
+                <button>Former</button>
+                <button>Following</button>
             </div>
         </div>
     </section>
@@ -427,73 +609,167 @@
                     <li>Latest Reports</li>
                 </ul>
                 <div class="blogSlide">
-                    <div class="singleBlog">
-                        <div class="blogImg">
-                            <img src="assets/images/blog-img-1.jfif" alt="" class="clippedImage">
-                            <svg class="flt_svg" xmlns="http://www.w3.org/2000/svg">
-                                <defs>
-                                    <filter id="flt_tag">
-                                        <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
-                                        <feColorMatrix in="blur" mode="matrix"
-                                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="flt_tag" />
-                                        <feComposite in="SourceGraphic" in2="flt_tag" operator="atop" />
-                                    </filter>
-                                </defs>
-                            </svg>
-                        </div>
-                        <div class="blogInfo">
-                            <span>August 28, 2023</span>
-                            <h3>
-                                Discover San Martín de Trevejo, one of the oldest towns in Spain
-                            </h3>
-                            <p>
-                                In the international tourism field, Spain boasts a multitude of towns and cities that
-                                are totally unknown and that, however, are worthy.
-                            </p>
+                    <div class="swiper mySwiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="singleBlog">
+                                    <div class="blogImg">
+                                        <img src="assets/images/blog-img-1.jfif" alt="" class="clippedImage">
+                                        <svg class="flt_svg" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <filter id="flt_tag">
+                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+                                                    <feColorMatrix in="blur" mode="matrix"
+                                                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                        result="flt_tag" />
+                                                    <feComposite in="SourceGraphic" in2="flt_tag" operator="atop" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="blogInfo">
+                                        <span>August 28, 2023</span>
+                                        <h3>
+                                            Discover San Martín de Trevejo, one of the oldest towns in Spain
+                                        </h3>
+                                        <p>
+                                            In the international tourism field, Spain boasts a multitude of towns and
+                                            cities that
+                                            are totally unknown and that, however, are worthy.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="singleBlog">
+                                    <div class="blogImgUnder">
+                                        <svg class="flt_svg" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <filter id="flt_tag2">
+                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+                                                    <feColorMatrix in="blur" mode="matrix"
+                                                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                        result="flt_tag" />
+                                                    <feComposite in="SourceGraphic" in2="flt_tag" operator="atop" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="blogImg">
+                                        <img src="assets/images/blog-img-2.jfif" alt="" class="clippedImage">
+                                    </div>
+                                    <div class="blogInfo">
+                                        <span>August 28, 2023</span>
+                                        <h3>
+                                            The 7 municipalities in Spain that we recommend for traveling in winter
+                                        </h3>
+                                        <p>
+                                            In the international tourism field, Spain boasts a multitude of towns and
+                                            cities that
+                                            are totally unknown and that, however, are worthy.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="singleBlog">
+                                    <div class="blogImg">
+                                        <img src="assets/images/blog-img-3.jfif" alt="" class="clippedImage">
+                                    </div>
+                                    <div class="blogInfo">
+                                        <span>August 28, 2023</span>
+                                        <h3>
+                                            Five beautiful towns in Spain that can be visited in a few hours
+                                        </h3>
+                                        <p>
+                                            In the international tourism field, Spain boasts a multitude of towns and
+                                            cities that
+                                            are totally unknown and that, however, are worthy.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="singleBlog">
+                                    <div class="blogImg">
+                                        <img src="assets/images/blog-img-1.jfif" alt="" class="clippedImage">
+                                        <svg class="flt_svg" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <filter id="flt_tag">
+                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+                                                    <feColorMatrix in="blur" mode="matrix"
+                                                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                        result="flt_tag" />
+                                                    <feComposite in="SourceGraphic" in2="flt_tag" operator="atop" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="blogInfo">
+                                        <span>August 28, 2023</span>
+                                        <h3>
+                                            Discover San Martín de Trevejo, one of the oldest towns in Spain
+                                        </h3>
+                                        <p>
+                                            In the international tourism field, Spain boasts a multitude of towns and
+                                            cities that
+                                            are totally unknown and that, however, are worthy.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="singleBlog">
+                                    <div class="blogImgUnder">
+                                        <svg class="flt_svg" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <filter id="flt_tag2">
+                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+                                                    <feColorMatrix in="blur" mode="matrix"
+                                                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                        result="flt_tag" />
+                                                    <feComposite in="SourceGraphic" in2="flt_tag" operator="atop" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="blogImg">
+                                        <img src="assets/images/blog-img-2.jfif" alt="" class="clippedImage">
+                                    </div>
+                                    <div class="blogInfo">
+                                        <span>August 28, 2023</span>
+                                        <h3>
+                                            The 7 municipalities in Spain that we recommend for traveling in winter
+                                        </h3>
+                                        <p>
+                                            In the international tourism field, Spain boasts a multitude of towns and
+                                            cities that
+                                            are totally unknown and that, however, are worthy.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="singleBlog">
+                                    <div class="blogImg">
+                                        <img src="assets/images/blog-img-3.jfif" alt="" class="clippedImage">
+                                    </div>
+                                    <div class="blogInfo">
+                                        <span>August 28, 2023</span>
+                                        <h3>
+                                            Five beautiful towns in Spain that can be visited in a few hours
+                                        </h3>
+                                        <p>
+                                            In the international tourism field, Spain boasts a multitude of towns and
+                                            cities that
+                                            are totally unknown and that, however, are worthy.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="singleBlog">
-                        <div class="blogImgUnder">
-                            <svg class="flt_svg" xmlns="http://www.w3.org/2000/svg">
-                                <defs>
-                                    <filter id="flt_tag2">
-                                        <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
-                                        <feColorMatrix in="blur" mode="matrix"
-                                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="flt_tag" />
-                                        <feComposite in="SourceGraphic" in2="flt_tag" operator="atop" />
-                                    </filter>
-                                </defs>
-                            </svg>
-                        </div>
-                        <div class="blogImg">
-                            <img src="assets/images/blog-img-2.jfif" alt="" class="clippedImage">
-                        </div>
-                        <div class="blogInfo">
-                            <span>August 28, 2023</span>
-                            <h3>
-                                The 7 municipalities in Spain that we recommend for traveling in winter
-                            </h3>
-                            <p>
-                                In the international tourism field, Spain boasts a multitude of towns and cities that
-                                are totally unknown and that, however, are worthy.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="singleBlog">
-                        <div class="blogImg">
-                            <img src="assets/images/blog-img-3.jfif" alt="" class="clippedImage">
-                        </div>
-                        <div class="blogInfo">
-                            <span>August 28, 2023</span>
-                            <h3>
-                                Five beautiful towns in Spain that can be visited in a few hours
-                            </h3>
-                            <p>
-                                In the international tourism field, Spain boasts a multitude of towns and cities that
-                                are totally unknown and that, however, are worthy.
-                            </p>
-                        </div>
-                    </div>
+                    <div class="swiper-pagination swiper-pagination1"></div>
                 </div>
             </div>
         </div>
@@ -584,23 +860,25 @@
                     </ul>
                 </div>
                 <div class="footerItem">
-                    <h3>Contact Us</h3>
-                    <ul class="footerConList">
-                        <li>
-                            <img src="assets/images/council.svg" alt="">
-                            <div class="footerConInfo">
-                                <p>Award-winning</p>
-                                <span>8138</span>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="assets/images/message.svg" alt="">
-                            <div class="footerConInfo">
-                                <p>Municipalities</p>
-                                <span>21748</span>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="footerConTop">
+                        <h3>Contact Us</h3>
+                        <ul class="footerConList">
+                            <li>
+                                <img src="assets/images/council.svg" alt="">
+                                <div class="footerConInfo">
+                                    <p>Award-winning</p>
+                                    <span>8138</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="assets/images/message.svg" alt="">
+                                <div class="footerConInfo">
+                                    <p>Municipalities</p>
+                                    <span>21748</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="footerValue">
                         <h4>Ayuntamiento.es is Valued</h4>
                         <div class="footerValueRate">
@@ -625,6 +903,53 @@
     <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
     <script src="assets/js/accordion.js"></script>
     <script src="assets/maps/spain.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper1", {
+            slidesPerView: 1,
+            spaceBetween: 16,
+            breakpoints: {
+                750: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                550: {
+                    slidesPerView: 2,
+                    spaceBetween: 16,
+                },
+            },
+            pagination: {
+                el: ".swiper-pagination1",
+                clickable: true,
+            },
+        });
+
+        let swiper2;
+
+        function initializeSwiper() {
+            if (window.innerWidth < 1000 && !swiper2) {
+                swiper2 = new Swiper(".mySwiper2", {
+                    slidesPerView: 1,
+                    spaceBetween: 16,
+                    breakpoints: {
+                        550: {
+                            slidesPerView: 2,
+                        },
+                    },
+                });
+            } else if (window.innerWidth >= 1000 && swiper2) {
+                swiper2.destroy();
+                swiper2 = null;
+            }
+        }
+
+        initializeSwiper();
+
+        window.addEventListener("resize", initializeSwiper);
+    </script>
 </body>
 
 </html>
