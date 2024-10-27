@@ -2934,6 +2934,11 @@ footer {
         padding: 0 20px;
     }
 
+    .mobileNav.active {
+        opacity: 1;
+        pointer-events: all;
+    }
+
     header .container {
         padding: 25px 20px;
     }
@@ -2944,6 +2949,8 @@ footer {
     }
     .menuOpen, .profileOpen {
         display: flex;
+        position: relative;
+        z-index: 10;
     }
 
     .heroFloat, .heroLeftFloat, .heroLeftFloat2, .heroInfoRight .heroImgWhiteDot, .paginationInd {
