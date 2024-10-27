@@ -2730,13 +2730,44 @@ footer {
 
 
 
-.articleDetPost .singleBlog {
-    width: calc(50% - 28px);
+
+.artDetPostBlog {
+    position: relative;
 }
+
+
+
+/* .articleDetPost .singleBlog {
+    width: calc(50% - 28px);
+} */
 /* tenth page styles ends */
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* twelfth page styles */
+.repTownPost .blogSlide {
+    display: unset;
+}
+
+.repTownPost .blogSlide .swiper-button-disabled {
+    border: 1px solid #BD1A15;
+    background: #fff;
+    opacity: 1 !important;
+    color: #BD1A15 !important;
+}
+/* twelfth page styles ends */
 
 
 
@@ -4183,6 +4214,11 @@ footer {
     .dirPost .detPostNeiItem .detPostNeiItemRight h3 {
         font-size: 16px;
     }
+
+
+    .detPostComSelContainer {
+        margin-right: 22px;
+    }
 }
 /* fourth page responsive ends */
 
@@ -4213,3 +4249,130 @@ footer {
 }
 
 /* fifth page responsive ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ninth page responsive */
+@media (max-width: 750px) {
+    .articleInterCon .blogSlide {
+        /* grid-template-columns: repeat(1, 1fr); */
+        gap: 25px;
+    }
+}
+
+
+
+@media (max-width: 550px) {
+    .articleInterCon .blogSlide {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* ninth page responsive ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tenth page responsive */
+@media (max-width: 750px) {
+    .artDetPostHeadLeft p {
+        font-size: 14px;
+    }
+    .artDetPostHeadLeft span img {
+        width: 15px;
+    }
+    .artDetPostHeadLeft span {
+        font-size: 14px;
+    }
+}
+@media (max-width: 550px) {
+    .artDetPostConHeading {
+        height: 250px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .artDetPostheading {
+        flex-wrap: wrap;
+    }
+
+
+    .artDetPostHeadRight {
+        gap: 15px;
+        margin: 10px 0;
+    }
+    .artDetPostHeadRight a {
+        margin-left: 0;
+    }
+}
+/* tenth page responsive ends */
+
+
+
+
+
+
+
+
+
+
+/* fourteenth page responsive */
+@media (max-width: 550px) {
+    .fesGloInt {
+        padding: 15px;
+    }
+
+
+    .fesGloInt p {
+        font-size: 14px;
+    }
+
+    .fesGloIntImg {
+        height: 240px;
+    }
+
+    .fesGloIntText {
+        width: 100%;
+        text-align: center;
+        padding: 10px 15px;
+    }
+    .fesGloIntText::before {
+        content: unset;
+    }
+
+    .fesGloIntText h3 {
+        font-size: 28px;
+    }
+
+    .fesGloIntText button {
+        font-size: 180px;
+        height: 52px;
+        font-size: 16px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+/* fourteenth page responsive ends */
