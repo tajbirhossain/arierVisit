@@ -1409,6 +1409,9 @@ footer {
     top: -40px;
     z-index: 11;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .detailsHeroForm  img {
     position: absolute;
@@ -1447,6 +1450,7 @@ footer {
 .detailsPost .container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 150px;
 }
 
 
@@ -1481,6 +1485,7 @@ footer {
 .detPostMainImg img {
     width: 80%;
     height: 80%;
+    object-fit: contain;
 }
 .detPostMainImg span {
     width: 56px;
@@ -1682,6 +1687,11 @@ footer {
 }
 
 
+.mySwiper5 {
+    width: 100%;
+    display: none;
+}
+
 
 
 .detPostGal button {
@@ -1841,8 +1851,11 @@ footer {
     margin-bottom: 60px;
 }
 
-.detPostCurItem {
+/* .detPostCurItem {
     width: calc(50% - 25px);
+} */
+.mySwiper4 {
+    width: 100%;
 }
 .detPostCurItemImg {
     width: 100%;
@@ -1860,7 +1873,7 @@ footer {
 
 
 .detPostCurItemInfo {
-    margin-top: -8px;
+    margin-top: -3px;
 }
 .detPostCurItemInfo h3 {
     font-size: 24px;
@@ -1904,15 +1917,17 @@ footer {
 .detPostSlideWrap {
     padding: 120px 0;
     padding-bottom: 140px;
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
 }
-.detPostSlide {
+/* .detPostSlide {
     display: flex;
     justify-content: space-between;
+} */
+.mySwiper3 {
+    width: 100%;
 }
-
 .detPostSlideItem {
-    width: calc(100% / 4 - 22px);
+    width: 100%;
     padding: 14px;
     border-radius: 20px;
     border: 1px solid #EAEAEA;
@@ -1941,6 +1956,39 @@ footer {
     font-size: 18px;
     font-weight: 500;
     color: #1F1F1F;
+}
+
+
+.detPostSlideNav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 14px;
+    margin-top: 50px;
+}
+
+.swiper-button-next1, .swiper-button-prev1 {
+    width: 59px !important;
+    height: 59px !important;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #F14E3E 0%, #B92315 100%);
+    position: unset !important;
+    color: #fff !important;
+    font-size: 18px !important;
+    margin-top: 0;
+}
+
+.detPostSlide .swiper-button-disabled {
+    border: 1px solid #BD1A15;
+    background: #fff;
+    opacity: 1 !important;
+    color: #BD1A15 !important;
+}
+
+.swiper-button-next1:after, .swiper-button-prev1:after {
+    font-size: 20px !important;
 }
 
 
@@ -2104,6 +2152,9 @@ footer {
     align-items: center;
     justify-content: center;
 }
+.nearHallList li span img {
+    max-height: 70%;
+}
 
 
 .nearHallInfo {
@@ -2147,7 +2198,9 @@ footer {
 
 /* third page styles */
 .dirFindInfoWrap {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
     margin-bottom: 112px;
 }
 
@@ -2286,6 +2339,10 @@ footer {
 .dirPost .detPostNeiItem .detPostNeiItemRight {
     padding: 14px 0;
     padding-bottom: 2px;
+    padding-top: 0;
+}
+.dirPost .detPostNeiItem .detPostNeiItemRight h3 {
+    margin-bottom: 0;
 }
 
 
@@ -3233,6 +3290,9 @@ footer {
         width: 100%;
         font-size: 14px;
     }
+    .heroForm input::placeholder {
+        font-size: 14px;
+    }
 
     .heroForm button {
         width: 130px;
@@ -3388,6 +3448,10 @@ footer {
 
     .heroForm {
         width: 95%;
+        padding-left: 55px;
+    }
+    .heroForm img {
+        left: 26px;
     }
 
 
@@ -3531,3 +3595,574 @@ footer {
     }
 }
 /* first page responsive ends */
+
+
+
+
+
+
+
+
+
+
+
+
+/* second page responsive */
+@media (max-width: 1600px) {
+    .detPostNeiWrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+@media (max-width: 1300px) {
+    .detailsHeroForm {
+        width: 620px;
+        height: 75px;
+    }
+
+    .detailsPost .container {
+        flex-direction: column;
+    }
+
+    .detPostLeft {
+        width: 100%;
+        padding-bottom: 70px;
+    }
+
+    .detPostSlideWrap{
+        padding-bottom: 0;
+    }
+    .detPostRight {
+        width: 100%;
+    }
+
+
+    
+}
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .detailsHeroInn h1 {
+        font-size: 42px;
+    }
+    .detailsHeroForm {
+        width: 90%;
+        height: 75px;
+    }
+    .detailsHeroForm button {
+        width: 130px;
+        font-size: 16px;
+    }
+
+    .detPostMainInfoHeading h3 {
+        font-size: 24px;
+    }
+
+
+    .detPostGal h2 {
+        font-size: 36px;
+    }
+
+
+    .detPostGal button {
+        width: 170px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+
+    .detPostNeiHeading h2 {
+        font-size: 36px;
+    }
+
+
+    .detPostNeiHeadBtn button {
+        padding: 13px 25px;
+    }
+
+
+    .detPostGeo h2 {
+        font-size: 36px;
+    }
+
+    .detPostCur h2 {
+        font-size: 36px;
+    }
+
+    .detPostCurItemInfo h3 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+
+
+    .detPostCurBtn button {
+        width: 130px;
+        height: 50px;
+        font-size: 16px;
+        padding: 0;
+    }
+
+
+
+    .detPostSlideItemText h3 {
+        font-size: 16px;
+    }
+
+
+
+    .detPostRightItemHeading {
+        height: 70px;
+    }
+    .detPostRightItemHeading h3 {
+        font-size: 20px;
+    }
+
+    .detPostRightItemInfo h4 {
+        font-size: 17px;
+    }
+
+    .detPostRightForm label {
+        font-size: 14px;
+    }
+
+
+    .detPostRightForm button {
+        width: 150px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+
+    .nearHallInfo h4 {
+        font-size: 17px;
+    }
+}
+
+
+
+
+@media (max-width: 800px) {
+    .detPostMain {
+        flex-direction: column;
+    }
+
+    .detPostMainImg {
+        width: 100%;
+    }
+    .detPostMainImg img {
+        width: 50%;
+        height: unset;
+    }
+    .detPostMainInfo {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+}
+
+
+
+@media (max-width: 750px) {
+    .detailsHeroInn{
+        height: 290px;
+    }
+    .detailsHeroInn h1 {
+        font-size: 32px;
+        display: block;
+        margin: 0 auto;
+        /* max-width: 80%; */
+    }
+
+
+    .detailsHeroForm {
+        height: 58px;
+        position: relative;
+    }
+    .detailsHeroForm img {
+        width: 20px;
+    }
+    .detailsHeroForm input {
+        width: 100%;
+        font-size: 14px;
+    }
+    .detailsHeroForm input::placeholder {
+        font-size: 14px;
+    }
+    .detailsHeroForm button {
+        width: 130px;
+        height: 52px;
+        position: absolute;
+        bottom: -75px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 17px;
+    }
+
+
+
+
+    .detPostMainInfoHeading h3 {
+        font-size: 22px;
+    }
+    .detPostMainInfoHeading p {
+        font-size: 15px;
+    }
+    .detPostMainInfo ul li span {
+        font-size: 14px;
+    }
+    .detPostMainInfo ul li p {
+        font-size: 15px;
+    }
+    .detPostConHeading img {
+        height: 170px;
+    }
+    .detPostConItem {
+        margin-bottom: 36px;
+    }
+    .detPostConItem h3 {
+        font-size: 22px;
+    }
+    .detPostConItem p {
+        font-size: 15px;
+    }
+
+
+
+    .detPostGal h2 {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+    .detPostGalTop {
+        height: 320px;
+    }
+    .detPostGalBottom {
+        height: 320px;
+    }
+
+
+
+    .detPostNeiHeading {
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .detPostNeiHeading h2 {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .detPostNeiHeadBtn {
+        width: 100%;
+        gap: 10px;
+    }
+    .detPostNeiHeadBtn button {
+        width: 50%;
+        height: 56px;
+        padding: 0;
+        margin: 0;
+        font-size: 17px;
+    }
+    .detPostNeiWrap {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .detPostGeo h2 {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+    .detPostGeoMap {
+        height: 400px;
+    }
+
+
+    .detPostCur h2 {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+
+
+    .detPostCurItemImg {
+        height: 275px;
+    }
+    .detPostCurItemInfo h3 {
+        font-size: 20px;
+    }
+    .detPostCurItemInfo p {
+        line-height: 28px;
+    }
+
+
+
+    .detPostSlideWrap {
+        padding-top: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 550px) {
+    .detailsHeroForm {
+        width: 100%;
+        padding-left: 55px;
+    }
+    .detailsHeroForm img {
+        left: 26px;
+    }
+
+
+
+    .detPostMain {
+        padding: 10px;
+    }
+    .detPostMainImg {
+        height: 280px;
+        min-height: unset;
+    }
+    .detPostMainImg span {
+        width: 52px;
+        height: 52px;
+    }
+
+
+    .detPostConHeading img {
+        width: calc(50% - 7px);
+        height: 140px;
+    }
+    .detPostGalTop, .detPostGalBottom {
+        display: none;
+    }
+    .mySwiper5 {
+        display: block;
+        overflow-x: visible;
+        overflow-y: clip;
+        padding: 0 8px;
+    }
+
+
+    .detPostGal .swiper-slide img {
+        width: 100%;
+        height: 244px;
+        border-radius: 14px;
+        object-fit: cover;
+    }
+
+
+    .detPostGal button {
+        display: none;
+    }
+
+
+    .detPostNei {
+        padding: 35px 20px;
+    }
+
+
+    .mySwiper4 {
+        overflow-x: visible;
+        overflow-y: clip;
+        padding: 0 8px;
+    }
+
+    .detPostCurItemImg {
+        height: 260px;
+    }
+
+
+
+
+    .mySwiper3 {
+        overflow-x: visible;
+        overflow-y: clip;
+        padding: 0 30px;
+    }
+}
+/* second page responsive ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* third page responsive */
+@media (max-width: 1600px) {
+    .dirFindInfoWrap {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 50px;
+    }
+}
+
+
+/* @media (max-width: 1300px) {
+    .dirFindInfoWrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
+@media (max-width: 1000px) {
+    .dirFindInfoWrap {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .dirFindInfoWrap .singleFindInfo {
+        display: flex;
+        gap: 12px;
+    }
+    .dirFindInfoWrap .singleFindLeft {
+        width: 200px;
+        height: 225px;
+    }
+    .singleFindRightTagWrap {
+        margin-bottom: 0;
+    }
+    .dirFindInfoWrap .singleFindRight {
+        border: none;
+        box-shadow: unset;
+        padding: 0;
+    }
+    .dirFindInfoWrap .singleFindRight p {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+@media (max-width: 550px) {
+    .detailsPost {
+        padding-top: 60px;
+    }
+
+
+    .dirFindInfoWrap .singleFindLeft {
+        width: 112px;
+        height: 152px;
+    }
+
+    .singleFindLeft img {
+        max-width: 60%;
+    }
+}
+/* third page responsive ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* fourth page responsive */
+@media (max-width: 1000px) {
+    .dirPost .detPostNeiWrap {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .detPostCom h2 {
+        font-size: 38px;
+
+    }
+
+    .detPostComInp label {
+        font-size: 18px;
+    }
+    .detPostComSel label {
+        font-size: 14px;
+    }
+
+    .detPostComVote h4 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 750px) {
+    .detPostCom h2 {
+        font-size: 28px;
+    }
+
+    .detPostComInp label {
+        font-size: 14px;
+    }
+    .detPostComInp p {
+        font-size: 10px;
+    }
+
+
+    .detPostComSel label {
+        font-size: 12px;
+    }
+
+
+    .detPostCom form button {
+        width: 241px;
+        height: 52px;
+        font-size: 16px;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .dirPost .detPostNei {
+        padding: 35px 0;
+        background-color: unset;
+        position: relative;
+    }
+    .dirPost .detPostNei::before {
+        width: calc(100% + 40px);
+        height: 100%;
+        background-color: #C0281A0D;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -20px;
+        z-index: -1;
+    }
+    .dirPost .detPostNeiWrap {
+        gap: 12px;
+    }
+    .detPostNeiItem {
+        padding: 8px;
+    }
+    .dirPost .detPostNeiItem .detPostNeiItemLeft {
+        height: 106px;
+    }
+
+    .dirPost .detPostNeiItem .detPostNeiItemRight h3 {
+        font-size: 16px;
+    }
+}
+/* fourth page responsive ends */
