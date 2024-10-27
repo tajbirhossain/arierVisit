@@ -2545,6 +2545,7 @@ footer {
     margin: 0 auto;
     position: relative;
     top: -40px;
+    flex-wrap: wrap;
 }
 .dirComFilter button {
     width: 32px;
@@ -4034,7 +4035,8 @@ footer {
 @media (max-width: 800px) {
     .dirFindInfoWrap .singleFindInfo {
         display: flex;
-        gap: 12px;
+        justify-content: space-between;
+        /* gap: 12px; */
     }
     .dirFindInfoWrap .singleFindLeft {
         width: 200px;
@@ -4044,6 +4046,7 @@ footer {
         margin-bottom: 0;
     }
     .dirFindInfoWrap .singleFindRight {
+        width: calc(100% - 200px - 12px);
         border: none;
         box-shadow: unset;
         padding: 0;
@@ -4056,6 +4059,18 @@ footer {
 
 
 
+@media (max-width: 750px) {
+    .singleFindRightTagItem img {
+        width: 12px;
+        margin-right: 6px;
+    }
+    .singleFindRightTagItem span {
+        font-size: 12px;
+    }
+}
+
+
+
 @media (max-width: 550px) {
     .detailsPost {
         padding-top: 60px;
@@ -4064,11 +4079,15 @@ footer {
 
     .dirFindInfoWrap .singleFindLeft {
         width: 112px;
-        height: 152px;
+        height: 172px;
     }
 
     .singleFindLeft img {
         max-width: 60%;
+    }
+
+    .dirFindInfoWrap .singleFindRight {
+        width: calc(100% - 112px - 12px);
     }
 }
 /* third page responsive ends */
@@ -4166,3 +4185,31 @@ footer {
     }
 }
 /* fourth page responsive ends */
+
+
+
+
+
+
+
+
+
+
+
+/* fifth page responsive */
+@media (max-width: 800px) {
+    .directoryComar .singleFindInfoCon {
+        height: fit-content;
+    }
+    .directoryComar .singleFindRight {
+        height: fit-content;
+    }
+}
+@media (max-width: 550px) {
+    .directoryComar .singleFindLeft {
+        height: 185px;
+    }
+    
+}
+
+/* fifth page responsive ends */
